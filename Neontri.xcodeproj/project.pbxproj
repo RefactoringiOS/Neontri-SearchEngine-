@@ -1,0 +1,873 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		81C00BFCAB45D72B7659F2A2 /* Pods_Neontri.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAEEB7ED19D1DDEF905F31C2 /* Pods_Neontri.framework */; };
+		9A55438C8BDCB3B073167D80 /* Pods_Neontri_NeontriUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25FD8A7EDF94F6A3BB23F654 /* Pods_Neontri_NeontriUITests.framework */; };
+		B2B9A19A2374331100942F3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9A1992374331100942F3A /* AppDelegate.swift */; };
+		B2B9A1A32374331300942F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2B9A1A22374331300942F3A /* Assets.xcassets */; };
+		B2B9A1A62374331300942F3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B9A1A42374331300942F3A /* LaunchScreen.storyboard */; };
+		B2B9A1B12374331300942F3A /* NeontriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9A1B02374331300942F3A /* NeontriTests.swift */; };
+		B2B9A1BC2374331300942F3A /* NeontriUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9A1BB2374331300942F3A /* NeontriUITests.swift */; };
+		B2B9A1D22374366200942F3A /* MainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9A1D12374366200942F3A /* MainListViewController.swift */; };
+		B2B9A1D5237438FD00942F3A /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9A1D3237438FD00942F3A /* HttpClient.swift */; };
+		B2B9A1D6237438FD00942F3A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9A1D4237438FD00942F3A /* Constants.swift */; };
+		B2B9A1D92374395B00942F3A /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9A1D72374395B00942F3A /* Repository.swift */; };
+		B2B9A1DA2374395B00942F3A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9A1D82374395B00942F3A /* User.swift */; };
+		B2B9A1DD2374398400942F3A /* GitHubItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9A1DB2374398400942F3A /* GitHubItem.swift */; };
+		B2B9A1DE2374398400942F3A /* Starred.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9A1DC2374398400942F3A /* Starred.swift */; };
+		B2B9A1E323743AB400942F3A /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9A1DF23743AB400942F3A /* UserTableViewCell.swift */; };
+		B2B9A1E423743AB400942F3A /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9A1E023743AB400942F3A /* RepositoryTableViewCell.swift */; };
+		B2B9A1E523743AB400942F3A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9A1E123743AB400942F3A /* TableViewCell.swift */; };
+		B2B9A1E623743AB400942F3A /* UserPortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9A1E223743AB400942F3A /* UserPortfolioViewController.swift */; };
+		B2B9A1EC23743AD100942F3A /* SearchResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9A1E723743AD000942F3A /* SearchResultsViewModel.swift */; };
+		B2B9A1ED23743AD100942F3A /* RepositoryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9A1E823743AD000942F3A /* RepositoryCellViewModel.swift */; };
+		B2B9A1EE23743AD100942F3A /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9A1E923743AD100942F3A /* UserCellViewModel.swift */; };
+		B2B9A1EF23743AD100942F3A /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9A1EA23743AD100942F3A /* CellViewModel.swift */; };
+		B2B9A1F023743AD100942F3A /* PortfolioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9A1EB23743AD100942F3A /* PortfolioViewModel.swift */; };
+		B2B9A1F423743AE600942F3A /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9A1F123743AE600942F3A /* UIView+Constraints.swift */; };
+		B2B9A1F523743AE600942F3A /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9A1F223743AE600942F3A /* Dynamic.swift */; };
+		B2B9A1F623743AE600942F3A /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9A1F323743AE600942F3A /* UIColor+Extension.swift */; };
+		D66207CCFC3D859A70A71144 /* Pods_NeontriTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD8F117986DDAA1EA4A5022 /* Pods_NeontriTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B2B9A1AD2374331300942F3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2B9A18E2374331100942F3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2B9A1952374331100942F3A;
+			remoteInfo = Neontri;
+		};
+		B2B9A1B82374331300942F3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2B9A18E2374331100942F3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2B9A1952374331100942F3A;
+			remoteInfo = Neontri;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DD8F117986DDAA1EA4A5022 /* Pods_NeontriTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeontriTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25FD8A7EDF94F6A3BB23F654 /* Pods_Neontri_NeontriUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Neontri_NeontriUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6208FCD2727C35BCD5268177 /* Pods-Neontri.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neontri.release.xcconfig"; path = "Target Support Files/Pods-Neontri/Pods-Neontri.release.xcconfig"; sourceTree = "<group>"; };
+		6C8CDF40D28EFA12B1FC04CC /* Pods-NeontriTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeontriTests.release.xcconfig"; path = "Target Support Files/Pods-NeontriTests/Pods-NeontriTests.release.xcconfig"; sourceTree = "<group>"; };
+		78537A17F4133BCDDFC2AC70 /* Pods-Neontri-NeontriUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neontri-NeontriUITests.debug.xcconfig"; path = "Target Support Files/Pods-Neontri-NeontriUITests/Pods-Neontri-NeontriUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B2B9A1962374331100942F3A /* Neontri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neontri.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2B9A1992374331100942F3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B2B9A1A22374331300942F3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2B9A1A52374331300942F3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B2B9A1A72374331300942F3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2B9A1AC2374331300942F3A /* NeontriTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeontriTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2B9A1B02374331300942F3A /* NeontriTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeontriTests.swift; sourceTree = "<group>"; };
+		B2B9A1B22374331300942F3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2B9A1B72374331300942F3A /* NeontriUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeontriUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2B9A1BB2374331300942F3A /* NeontriUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeontriUITests.swift; sourceTree = "<group>"; };
+		B2B9A1BD2374331300942F3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2B9A1D12374366200942F3A /* MainListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListViewController.swift; sourceTree = "<group>"; };
+		B2B9A1D3237438FD00942F3A /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		B2B9A1D4237438FD00942F3A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B2B9A1D72374395B00942F3A /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		B2B9A1D82374395B00942F3A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B2B9A1DB2374398400942F3A /* GitHubItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubItem.swift; sourceTree = "<group>"; };
+		B2B9A1DC2374398400942F3A /* Starred.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Starred.swift; sourceTree = "<group>"; };
+		B2B9A1DF23743AB400942F3A /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		B2B9A1E023743AB400942F3A /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
+		B2B9A1E123743AB400942F3A /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		B2B9A1E223743AB400942F3A /* UserPortfolioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPortfolioViewController.swift; sourceTree = "<group>"; };
+		B2B9A1E723743AD000942F3A /* SearchResultsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsViewModel.swift; sourceTree = "<group>"; };
+		B2B9A1E823743AD000942F3A /* RepositoryCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryCellViewModel.swift; sourceTree = "<group>"; };
+		B2B9A1E923743AD100942F3A /* UserCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
+		B2B9A1EA23743AD100942F3A /* CellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
+		B2B9A1EB23743AD100942F3A /* PortfolioViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioViewModel.swift; sourceTree = "<group>"; };
+		B2B9A1F123743AE600942F3A /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		B2B9A1F223743AE600942F3A /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		B2B9A1F323743AE600942F3A /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		CAEEB7ED19D1DDEF905F31C2 /* Pods_Neontri.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Neontri.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3479B5279C0EA9D1ACA99A7 /* Pods-Neontri-NeontriUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neontri-NeontriUITests.release.xcconfig"; path = "Target Support Files/Pods-Neontri-NeontriUITests/Pods-Neontri-NeontriUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E505ADE2F81F7CF48BFEE6B7 /* Pods-NeontriTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeontriTests.debug.xcconfig"; path = "Target Support Files/Pods-NeontriTests/Pods-NeontriTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF3E2F5FDBC25F5826B8DC42 /* Pods-Neontri.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neontri.debug.xcconfig"; path = "Target Support Files/Pods-Neontri/Pods-Neontri.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2B9A1932374331100942F3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81C00BFCAB45D72B7659F2A2 /* Pods_Neontri.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2B9A1A92374331300942F3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66207CCFC3D859A70A71144 /* Pods_NeontriTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2B9A1B42374331300942F3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A55438C8BDCB3B073167D80 /* Pods_Neontri_NeontriUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DF05BACE495ACCAF0929CD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAEEB7ED19D1DDEF905F31C2 /* Pods_Neontri.framework */,
+				25FD8A7EDF94F6A3BB23F654 /* Pods_Neontri_NeontriUITests.framework */,
+				0DD8F117986DDAA1EA4A5022 /* Pods_NeontriTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E665C6B7293CF7A34936DED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF3E2F5FDBC25F5826B8DC42 /* Pods-Neontri.debug.xcconfig */,
+				6208FCD2727C35BCD5268177 /* Pods-Neontri.release.xcconfig */,
+				78537A17F4133BCDDFC2AC70 /* Pods-Neontri-NeontriUITests.debug.xcconfig */,
+				D3479B5279C0EA9D1ACA99A7 /* Pods-Neontri-NeontriUITests.release.xcconfig */,
+				E505ADE2F81F7CF48BFEE6B7 /* Pods-NeontriTests.debug.xcconfig */,
+				6C8CDF40D28EFA12B1FC04CC /* Pods-NeontriTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B2B9A18D2374331100942F3A = {
+			isa = PBXGroup;
+			children = (
+				B2B9A1982374331100942F3A /* Neontri */,
+				B2B9A1AF2374331300942F3A /* NeontriTests */,
+				B2B9A1BA2374331300942F3A /* NeontriUITests */,
+				B2B9A1972374331100942F3A /* Products */,
+				5E665C6B7293CF7A34936DED /* Pods */,
+				4DF05BACE495ACCAF0929CD3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B2B9A1972374331100942F3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2B9A1962374331100942F3A /* Neontri.app */,
+				B2B9A1AC2374331300942F3A /* NeontriTests.xctest */,
+				B2B9A1B72374331300942F3A /* NeontriUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2B9A1982374331100942F3A /* Neontri */ = {
+			isa = PBXGroup;
+			children = (
+				B2B9A1D0237435EB00942F3A /* AppDelegate */,
+				B2B9A1CF237435E800942F3A /* View */,
+				B2B9A1CE237435E500942F3A /* ViewModel */,
+				B2B9A1CD237435E300942F3A /* Model */,
+				B2B9A1CC237435E000942F3A /* Protocols and Extensions */,
+				B2B9A1CB237435DE00942F3A /* Networking */,
+				B2B9A1A22374331300942F3A /* Assets.xcassets */,
+				B2B9A1A42374331300942F3A /* LaunchScreen.storyboard */,
+				B2B9A1A72374331300942F3A /* Info.plist */,
+			);
+			path = Neontri;
+			sourceTree = "<group>";
+		};
+		B2B9A1AF2374331300942F3A /* NeontriTests */ = {
+			isa = PBXGroup;
+			children = (
+				B2B9A1B02374331300942F3A /* NeontriTests.swift */,
+				B2B9A1B22374331300942F3A /* Info.plist */,
+			);
+			path = NeontriTests;
+			sourceTree = "<group>";
+		};
+		B2B9A1BA2374331300942F3A /* NeontriUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B2B9A1BB2374331300942F3A /* NeontriUITests.swift */,
+				B2B9A1BD2374331300942F3A /* Info.plist */,
+			);
+			path = NeontriUITests;
+			sourceTree = "<group>";
+		};
+		B2B9A1CB237435DE00942F3A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B2B9A1D4237438FD00942F3A /* Constants.swift */,
+				B2B9A1D3237438FD00942F3A /* HttpClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B2B9A1CC237435E000942F3A /* Protocols and Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B2B9A1F223743AE600942F3A /* Dynamic.swift */,
+				B2B9A1F323743AE600942F3A /* UIColor+Extension.swift */,
+				B2B9A1F123743AE600942F3A /* UIView+Constraints.swift */,
+			);
+			path = "Protocols and Extensions";
+			sourceTree = "<group>";
+		};
+		B2B9A1CD237435E300942F3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2B9A1DB2374398400942F3A /* GitHubItem.swift */,
+				B2B9A1DC2374398400942F3A /* Starred.swift */,
+				B2B9A1D72374395B00942F3A /* Repository.swift */,
+				B2B9A1D82374395B00942F3A /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2B9A1CE237435E500942F3A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B2B9A1EA23743AD100942F3A /* CellViewModel.swift */,
+				B2B9A1EB23743AD100942F3A /* PortfolioViewModel.swift */,
+				B2B9A1E823743AD000942F3A /* RepositoryCellViewModel.swift */,
+				B2B9A1E723743AD000942F3A /* SearchResultsViewModel.swift */,
+				B2B9A1E923743AD100942F3A /* UserCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B2B9A1CF237435E800942F3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2B9A1D12374366200942F3A /* MainListViewController.swift */,
+				B2B9A1E023743AB400942F3A /* RepositoryTableViewCell.swift */,
+				B2B9A1E123743AB400942F3A /* TableViewCell.swift */,
+				B2B9A1E223743AB400942F3A /* UserPortfolioViewController.swift */,
+				B2B9A1DF23743AB400942F3A /* UserTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2B9A1D0237435EB00942F3A /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B2B9A1992374331100942F3A /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2B9A1952374331100942F3A /* Neontri */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2B9A1C02374331300942F3A /* Build configuration list for PBXNativeTarget "Neontri" */;
+			buildPhases = (
+				31B5AFA447A4EE117D90F0EE /* [CP] Check Pods Manifest.lock */,
+				B2B9A1922374331100942F3A /* Sources */,
+				B2B9A1932374331100942F3A /* Frameworks */,
+				B2B9A1942374331100942F3A /* Resources */,
+				A1094341B8B83A5483040780 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Neontri;
+			productName = Neontri;
+			productReference = B2B9A1962374331100942F3A /* Neontri.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B2B9A1AB2374331300942F3A /* NeontriTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2B9A1C32374331300942F3A /* Build configuration list for PBXNativeTarget "NeontriTests" */;
+			buildPhases = (
+				CCB32A581D83F60B7D6A9802 /* [CP] Check Pods Manifest.lock */,
+				B2B9A1A82374331300942F3A /* Sources */,
+				B2B9A1A92374331300942F3A /* Frameworks */,
+				B2B9A1AA2374331300942F3A /* Resources */,
+				9A9BA8520BA0E2CA6B662DC9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2B9A1AE2374331300942F3A /* PBXTargetDependency */,
+			);
+			name = NeontriTests;
+			productName = NeontriTests;
+			productReference = B2B9A1AC2374331300942F3A /* NeontriTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B2B9A1B62374331300942F3A /* NeontriUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2B9A1C62374331300942F3A /* Build configuration list for PBXNativeTarget "NeontriUITests" */;
+			buildPhases = (
+				90C3A28A14ECB6CF9E7BB5D1 /* [CP] Check Pods Manifest.lock */,
+				B2B9A1B32374331300942F3A /* Sources */,
+				B2B9A1B42374331300942F3A /* Frameworks */,
+				B2B9A1B52374331300942F3A /* Resources */,
+				0CFAD659E960AF8565F89061 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2B9A1B92374331300942F3A /* PBXTargetDependency */,
+			);
+			name = NeontriUITests;
+			productName = NeontriUITests;
+			productReference = B2B9A1B72374331300942F3A /* NeontriUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2B9A18E2374331100942F3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = KOVIGROUP;
+				TargetAttributes = {
+					B2B9A1952374331100942F3A = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					B2B9A1AB2374331300942F3A = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = B2B9A1952374331100942F3A;
+					};
+					B2B9A1B62374331300942F3A = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = B2B9A1952374331100942F3A;
+					};
+				};
+			};
+			buildConfigurationList = B2B9A1912374331100942F3A /* Build configuration list for PBXProject "Neontri" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2B9A18D2374331100942F3A;
+			productRefGroup = B2B9A1972374331100942F3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2B9A1952374331100942F3A /* Neontri */,
+				B2B9A1AB2374331300942F3A /* NeontriTests */,
+				B2B9A1B62374331300942F3A /* NeontriUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2B9A1942374331100942F3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2B9A1A62374331300942F3A /* LaunchScreen.storyboard in Resources */,
+				B2B9A1A32374331300942F3A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2B9A1AA2374331300942F3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2B9A1B52374331300942F3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CFAD659E960AF8565F89061 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Neontri-NeontriUITests/Pods-Neontri-NeontriUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Neontri-NeontriUITests/Pods-Neontri-NeontriUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Neontri-NeontriUITests/Pods-Neontri-NeontriUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31B5AFA447A4EE117D90F0EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Neontri-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90C3A28A14ECB6CF9E7BB5D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Neontri-NeontriUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A9BA8520BA0E2CA6B662DC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeontriTests/Pods-NeontriTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeontriTests/Pods-NeontriTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NeontriTests/Pods-NeontriTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1094341B8B83A5483040780 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Neontri/Pods-Neontri-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Neontri/Pods-Neontri-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Neontri/Pods-Neontri-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCB32A581D83F60B7D6A9802 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NeontriTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2B9A1922374331100942F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2B9A1E623743AB400942F3A /* UserPortfolioViewController.swift in Sources */,
+				B2B9A1DD2374398400942F3A /* GitHubItem.swift in Sources */,
+				B2B9A1E323743AB400942F3A /* UserTableViewCell.swift in Sources */,
+				B2B9A1F423743AE600942F3A /* UIView+Constraints.swift in Sources */,
+				B2B9A1F023743AD100942F3A /* PortfolioViewModel.swift in Sources */,
+				B2B9A1EC23743AD100942F3A /* SearchResultsViewModel.swift in Sources */,
+				B2B9A19A2374331100942F3A /* AppDelegate.swift in Sources */,
+				B2B9A1E423743AB400942F3A /* RepositoryTableViewCell.swift in Sources */,
+				B2B9A1D5237438FD00942F3A /* HttpClient.swift in Sources */,
+				B2B9A1DA2374395B00942F3A /* User.swift in Sources */,
+				B2B9A1E523743AB400942F3A /* TableViewCell.swift in Sources */,
+				B2B9A1F523743AE600942F3A /* Dynamic.swift in Sources */,
+				B2B9A1D92374395B00942F3A /* Repository.swift in Sources */,
+				B2B9A1EF23743AD100942F3A /* CellViewModel.swift in Sources */,
+				B2B9A1DE2374398400942F3A /* Starred.swift in Sources */,
+				B2B9A1EE23743AD100942F3A /* UserCellViewModel.swift in Sources */,
+				B2B9A1D22374366200942F3A /* MainListViewController.swift in Sources */,
+				B2B9A1ED23743AD100942F3A /* RepositoryCellViewModel.swift in Sources */,
+				B2B9A1D6237438FD00942F3A /* Constants.swift in Sources */,
+				B2B9A1F623743AE600942F3A /* UIColor+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2B9A1A82374331300942F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2B9A1B12374331300942F3A /* NeontriTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2B9A1B32374331300942F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2B9A1BC2374331300942F3A /* NeontriUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2B9A1AE2374331300942F3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2B9A1952374331100942F3A /* Neontri */;
+			targetProxy = B2B9A1AD2374331300942F3A /* PBXContainerItemProxy */;
+		};
+		B2B9A1B92374331300942F3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2B9A1952374331100942F3A /* Neontri */;
+			targetProxy = B2B9A1B82374331300942F3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B2B9A1A42374331300942F3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2B9A1A52374331300942F3A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2B9A1BE2374331300942F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B2B9A1BF2374331300942F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2B9A1C12374331300942F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF3E2F5FDBC25F5826B8DC42 /* Pods-Neontri.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DK7KX45HTN;
+				INFOPLIST_FILE = Neontri/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KOVIGROUP.Neontri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B2B9A1C22374331300942F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6208FCD2727C35BCD5268177 /* Pods-Neontri.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DK7KX45HTN;
+				INFOPLIST_FILE = Neontri/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KOVIGROUP.Neontri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B2B9A1C42374331300942F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E505ADE2F81F7CF48BFEE6B7 /* Pods-NeontriTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DK7KX45HTN;
+				INFOPLIST_FILE = NeontriTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KOVIGROUP.NeontriTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Neontri.app/Neontri";
+			};
+			name = Debug;
+		};
+		B2B9A1C52374331300942F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C8CDF40D28EFA12B1FC04CC /* Pods-NeontriTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DK7KX45HTN;
+				INFOPLIST_FILE = NeontriTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KOVIGROUP.NeontriTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Neontri.app/Neontri";
+			};
+			name = Release;
+		};
+		B2B9A1C72374331300942F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78537A17F4133BCDDFC2AC70 /* Pods-Neontri-NeontriUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DK7KX45HTN;
+				INFOPLIST_FILE = NeontriUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KOVIGROUP.NeontriUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Neontri;
+			};
+			name = Debug;
+		};
+		B2B9A1C82374331300942F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3479B5279C0EA9D1ACA99A7 /* Pods-Neontri-NeontriUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DK7KX45HTN;
+				INFOPLIST_FILE = NeontriUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KOVIGROUP.NeontriUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Neontri;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2B9A1912374331100942F3A /* Build configuration list for PBXProject "Neontri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2B9A1BE2374331300942F3A /* Debug */,
+				B2B9A1BF2374331300942F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2B9A1C02374331300942F3A /* Build configuration list for PBXNativeTarget "Neontri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2B9A1C12374331300942F3A /* Debug */,
+				B2B9A1C22374331300942F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2B9A1C32374331300942F3A /* Build configuration list for PBXNativeTarget "NeontriTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2B9A1C42374331300942F3A /* Debug */,
+				B2B9A1C52374331300942F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2B9A1C62374331300942F3A /* Build configuration list for PBXNativeTarget "NeontriUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2B9A1C72374331300942F3A /* Debug */,
+				B2B9A1C82374331300942F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2B9A18E2374331100942F3A /* Project object */;
+}

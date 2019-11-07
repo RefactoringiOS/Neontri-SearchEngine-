@@ -1,0 +1,6 @@
+framework module Pods_NeontriTests {
+  umbrella header "Pods-NeontriTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
